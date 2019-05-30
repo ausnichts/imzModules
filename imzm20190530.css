@@ -189,6 +189,38 @@ body.offcanvas {
     right: 0vw;
     z-index: 999;
 }
+.hatena-module-category .hatena-urllist ul {
+    list-style-type: none;
+}
+.hatena-module-category .hatena-urllist ul li {
+    padding: .2em 0 0 .2em;
+    position: relative;
+    border: none;
+}
+.hatena-module-category .hatena-urllist ul li::before {
+    content: "";
+    background: #999;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: -11px;
+}
+.hatena-module-category .hatena-urllist ul li::after {
+    content: "";
+    position: absolute;
+    background: #999;
+    width: 9px;
+    height: 1px;
+    left: -10px;
+    top: 60%;
+}
+.hatena-module-category .hatena-urllist ul li a::before {
+    margin-right: 5px;
+    font-size: .8em;
+}
+.hatena-module-category .hatena-urllist ul li:last-child::before {
+    height: 50%;
+}
 @media (min-width: 768px) {
     .offcanvastoggle {
         display: none;
@@ -385,3 +417,4 @@ body.offcanvas {
 .embed-footer img {
     vertical-align: middle;
 }
+
